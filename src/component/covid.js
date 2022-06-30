@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import './covid.css';
+import Grid from './grid';
 
-const Covid = () => {
+const Covid = (props) => {
     const [data, setData]= useState([]);
     const getCovidData= async () => {
         try{
@@ -25,14 +26,9 @@ const Covid = () => {
             <h1 className='heading_title_text'>Covid-19 Coronavirus Tracker</h1>
         </section>
         <section className='body_data'>
-            <div className="card card_style text-white bg-primary mb-3">
-                <div className="card-body">
-                    <h5 className="card-title">Total <span className='card_title_span'>Active</span></h5>
-                    <p className="card-text">
-                    {data.active}
-                    </p>
-                </div>
-            </div>
+            <Grid data={data.active} confirmed={data.confirmed} deaths={data.deaths} 
+            lastupdated={data.lastupdatedtime} migratedother={data.migratedother} 
+            recovered={data.recovered} />
         </section>
     </div>
   )
