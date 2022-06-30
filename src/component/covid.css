@@ -1,0 +1,44 @@
+body {
+    padding: 20px;
+    background-color: bisque;
+
+}
+.container {
+    padding-top: 10px;
+}
+.heading_title_text{
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    text-transform:uppercase;
+    color: #000;
+    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+    
+}
+.body_data{
+    padding-top: 30px;
+}
+.body_data .card_style{
+    border-radius: 10px;
+    max-width: 18rem;
+}
+.card-body{
+    padding: 20px;
+}
+.card-title{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.card-text{
+    text-align: center;
+    font-size: 43px;
+    font-weight: 600;
+}
+.card-body .card_title_span{
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
